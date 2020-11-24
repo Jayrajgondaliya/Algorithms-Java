@@ -12,8 +12,6 @@ import java.util.Iterator;
  *            This class file contains implementation of Singly Linked List, it
  *            is a list that have support for forward traversal only, - Dynamic
  *            in Size - Can have any number of elements
- * 
- * 
  */
 public class SinglyLinkedList<T> implements Iterable<T> {
 

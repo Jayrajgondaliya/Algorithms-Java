@@ -5,7 +5,9 @@ This Repository is for code files that implements various Data Structures and Al
 
 ## Included Topics
 	1. Data Structures 
-		- Tree 
+	 i. List
+	 	- SinglyLinkedList
+	 	- DoublyLinkedList 
 		
 
 ### Other Details

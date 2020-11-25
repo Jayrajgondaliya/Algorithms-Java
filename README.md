@@ -5,11 +5,14 @@ This Repository is for code files that implements various Data Structures and Al
 
 ## Included Topics
 	1. Data Structures 
-	 i. List
-	 	- SinglyLinkedList
-	 	- DoublyLinkedList
-	ii. Stack
-		- Stack 
+		* List
+	 		- SinglyLinkedList
+	 		- DoublyLinkedList
+	 	* Stack
+			- Stack
+		* Queue
+			- Queue
+		  
 		
 
 ### Other Details

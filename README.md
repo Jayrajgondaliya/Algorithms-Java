@@ -7,7 +7,9 @@ This Repository is for code files that implements various Data Structures and Al
 	1. Data Structures 
 	 i. List
 	 	- SinglyLinkedList
-	 	- DoublyLinkedList 
+	 	- DoublyLinkedList
+	ii. Stack
+		- Stack 
 		
 
 ### Other Details

@@ -84,6 +84,27 @@ public class Queue<T> implements Iterable<T> {
 		return size;
 	}
 
+	/**
+	 * @param obj
+	 * @return boolean Returns Boolean representing, whether it contains provided
+	 *         element or not.
+	 */
+	public boolean contains(Object obj) {
+		Node<T> traverse = head;
+		if (obj == null) {
+			for (traverse = head; traverse.data != null; traverse = traverse.next) {
+				if (traverse.data == null)
+					return true;
+			}
+		} else {
+			for (traverse = head; traverse.data != null; traverse = traverse.next) {
+				if (obj.equals(traverse.data))
+					return true;
+			}
+		}
+		return false;
+	}
+
 	@Override
 	public Iterator<T> iterator() {
 		return new Iterator<T>() {

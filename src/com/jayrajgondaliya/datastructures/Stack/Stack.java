@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 /**
  * 
- * @author jayrajgondaliya
+ * @author Jayraj Gondaliya
  *
  *         This class represents Implementation of Stack Data Structure using
  *         custom place holders.
@@ -12,7 +12,6 @@ import java.util.Iterator;
  */
 public class Stack<T> implements Iterable<T> {
 
-	
 	/**
 	 * int representing Size of Stack;
 	 */
@@ -36,21 +35,39 @@ public class Stack<T> implements Iterable<T> {
 
 	}
 
-	
 	/**
-	 * @param data
-	 * Adds element to stack
+	 * @param object
+	 * @return Boolean Returns Boolean, representing whether Stack contains provided
+	 *         element.
+	 */
+	public boolean contains(Object object) {
+		Node<T> traverse = head;
+		if (object == null) {
+			for (; traverse.data != null; traverse = traverse.next) {
+				if (traverse.data == null)
+					return true;
+			}
+		} else {
+			for (; traverse.data != null; traverse = traverse.next) {
+				if (object.equals(traverse.data))
+					return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * @param data Adds element to stack
 	 */
 	public void push(T data) {
-		Node node = new Node<T>(data, null);
+		Node<T> node = new Node<T>(data, null);
 		node.next = head;
 		head = node;
 		size++;
 	}
 
 	/**
-	 * @return T - Value of First element or top of stack
-	 * Returns top of stack;
+	 * @return T - Value of First element or top of stack Returns top of stack;
 	 */
 	public T pop() {
 		if (size() <= 0)
@@ -80,6 +97,15 @@ public class Stack<T> implements Iterable<T> {
 		}
 		stringBuilder.append("]");
 		return stringBuilder.toString();
+	}
+
+	/**
+	 * @return Boolean
+	 * 
+	 *         Returns boolean representing whether Stack is empty.
+	 */
+	public boolean isEmpty() {
+		return size() == 0;
 	}
 
 	@Override

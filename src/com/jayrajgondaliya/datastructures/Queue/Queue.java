@@ -3,7 +3,7 @@ package com.jayrajgondaliya.datastructures.Queue;
 import java.util.Iterator;
 
 /**
- * @author jayrajgondaliya
+ * @author Jayraj Gondaliya
  *
  * @param <T>
  * 

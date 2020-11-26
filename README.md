@@ -10,6 +10,7 @@ This Repository is for code files that implements various Data Structures and Al
 	 		- DoublyLinkedList
 	 	* Stack
 			- Stack
+			- LinkedListStack(Implementation of STACK using java.util.LinkedList)
 		* Queue
 			- Queue
 		  

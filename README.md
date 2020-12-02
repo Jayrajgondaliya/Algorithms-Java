@@ -13,6 +13,7 @@ This Repository is for code files that implements various Data Structures and Al
 			- LinkedListStack(Implementation of STACK using java.util.LinkedList)
 		* Queue
 			- Queue
+			- LinkedListQueue(Implementation of QUEUE using java.util.LinkedList)
 		  
 		
 

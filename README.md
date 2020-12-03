@@ -14,6 +14,9 @@ This Repository is for code files that implements various Data Structures and Al
 		* Queue
 			- Queue
 			- LinkedListQueue(Implementation of QUEUE using java.util.LinkedList)
+		* Heap
+			- MinHeap - Implementation using Array.
+			- MaxHeap - Implementation using Array.
 		  
 		
 

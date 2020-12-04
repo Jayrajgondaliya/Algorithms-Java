@@ -4,18 +4,15 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-
 /**
  * @author jayrajgondaliya
  *
  * @param <T>
  * 
- * Implementation of MaxHeap Using Array.
- * 	- Default LoadFactor is 0.75
- *  - Default capacity is 10 
- * 	- Finding Maximum value time complexity - O(1).
- *  - Search Time Complexity - O(n).
- *  - delete TIme complexity - O(n).
+ *            Implementation of MaxHeap Using Array. - Default LoadFactor is
+ *            0.75 - Default capacity is 10 - Finding Maximum value time
+ *            complexity - O(1). - Search Time Complexity - O(n). - delete TIme
+ *            complexity - O(n).
  */
 public class MaxHeap<T extends Comparable<T>> implements Heap<T> {
 
@@ -42,8 +39,9 @@ public class MaxHeap<T extends Comparable<T>> implements Heap<T> {
 
 	public MaxHeap(T[] array) {
 		super();
-		this.array = array;
+		this.array = Arrays.copyOf(array, array.length * 2);
 		size = array.length;
+		capacity = this.array.length;
 		heapify();
 		resize();
 	}
@@ -178,6 +176,7 @@ public class MaxHeap<T extends Comparable<T>> implements Heap<T> {
 	public Iterator<T> iterator() {
 		return new Iterator<T>() {
 			int i = 0;
+
 			@Override
 			public boolean hasNext() {
 				if (size == 0)

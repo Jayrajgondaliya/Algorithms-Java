@@ -18,7 +18,9 @@ This Repository is for code files that implements various Data Structures and Al
 			- MinHeap - Implementation using Array.
 			- MaxHeap - Implementation using Array.
 			- LinkedListMaxHeap - Implementation using LinkedList
-			- LinkedListMinHeap - Implementation using LinkedList.
+			- LinkedListMinHeap - Implementation using LinkedList
+		* Tree
+			- BinarySearchTree
 		  
 		
 

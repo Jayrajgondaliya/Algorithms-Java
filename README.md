@@ -21,7 +21,14 @@ This Repository is for code files that implements various Data Structures and Al
 			- LinkedListMinHeap - Implementation using LinkedList
 		* Tree
 			- BinarySearchTree
-		  
+			- AVLTree - Self Correcting Tree
+			
+	2. Algorithms
+		* Sorting
+			- Bubble Sort
+			- Selection Sort
+			- Insertion Sort
+			- Merge Sort
 		
 
 ### Other Details

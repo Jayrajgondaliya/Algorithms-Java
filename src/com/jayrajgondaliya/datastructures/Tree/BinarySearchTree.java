@@ -11,7 +11,7 @@ import java.util.Stack;
  * @param <T>
  * 
  *            Class provided implementation of BinarySearchTree. - Binary search
- *            tree have time complexity for search, delete, add - O(nlogn) -
+ *            tree have time complexity for search, delete, add - O(logn) -
  *            which is very good. - Traversing the tree is also important - in
  *            this class 4 different types of traversal is provided. 1. Pre
  *            Order Traversal - root, left, right 2. In Order Traversal - left,
@@ -43,10 +43,10 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 	public void add(T data) {
 		try {
 			root = add(root, data);
+			size++;
 		} catch (IllegalAccessException e) {
 			System.out.println(e.getMessage());
 		}
-		size++;
 	}
 
 	private Node<T> add(Node<T> node, T data) throws IllegalAccessException {
@@ -58,7 +58,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 		} else if (node.data.compareTo(data) < 0) {
 			node.right = add(node.right, data);
 		} else {
-			throw new IllegalAccessException("Duplicates are not allowed...");
+			throw new IllegalArgumentException("Duplicates are not allowed...");
 		}
 		return node;
 	}
